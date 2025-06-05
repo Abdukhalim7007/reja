@@ -1,5 +1,5 @@
 console.log("TRAIN AREA!");
-// A-TASK
+ 
 console.log("Jack Ma maslahatlari");
 const list = [
     "yaxshi talaba bo'ling", // 0-20
@@ -34,7 +34,7 @@ maslahatBering(70, (err, data) => {
 });
 console.log("passed here 1");
 
- 
+ // ASYN functions
 // async function maslahatBering(a) {
 //   if (typeof a !== "number") throw new Error("insert a number");
 //   else if (a <= 20) return list[0];
@@ -51,7 +51,7 @@ console.log("passed here 1");
     
 //   }
 // }
-// //then/catch
+// // call via then/catch
 // // console.log("passed here 0");
 // // maslahatBering(60)
 // //   .then((data) => {
@@ -62,7 +62,7 @@ console.log("passed here 1");
 // //   });
 // // console.log("passed here 1");
 
-// //async/await
+// // call via async/await
 // async function run() {
 //   let javob = await maslahatBering(25);
 //   console.log(javob);
@@ -73,3 +73,16 @@ console.log("passed here 1");
 // }
 
 // run();
+
+// A-TASK
+function countLetter(letter, text) {
+    let count = 0;
+    for (let i = 0; i < text.length; i++) {
+        if (text[i] === letter) {
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(countLetter("e", "engineer"));
