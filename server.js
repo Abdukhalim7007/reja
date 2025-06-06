@@ -1,5 +1,6 @@
-console.log("Web serverni boshlash!");
+console.log("Web Serverni boshlash");
 const express = require("express");
+const res = require("express/lib/response");
 const app = express();
 const http = require("http");
 const fs = require("fs");
@@ -13,7 +14,7 @@ fs.readFile("database/user.json", "utf8", (err, data) =>{
     }
 });
 
-//1: Kirish code
+//1: Kirish codesss
 app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
@@ -35,6 +36,7 @@ app.get('/master', (req, res) => {
 
 app.get("/", function(req, res){
     res.render("harid");
+
 });
 
 const server = http.createServer(app);
@@ -42,4 +44,5 @@ let PORT = 3000;
 server.listen(PORT, function(){
     console.log(`The server is successfully running on port:, ${PORT} `);
 });
+
  
