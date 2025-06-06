@@ -1,95 +1,4 @@
- <!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <title>Portfolio</title>
-
-</head>
-
-<body>
-    <div class="frame">
-        <div class="main_frame">
-            <div class="left_frame">
-                <div class="left_1">
-                    <div class="left_1-1">
-                        <img 
-                        src="images/Profile.png" width="156px"
-                        height="142px" alt="">
-                    </div>
-                    <div class="left_1-2"><%=user.name%></div>
-                    <div class="left_1-3"><%=user.profession%></div>
-                    <div class="left-icons">
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/facebook.svg" class="icon-1" alt="">
-                            </div>
-                        </a>
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/instagram.svg" class="icon-1"  alt="">
-                            </div>
-                        </a>
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/twitter.svg" class="icon-1"  alt="">
-                            </div>
-                        </a>
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/linkedin.svg" class="icon-1"  alt="">
-                            </div>
-                        </a>
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/youtube.svg" class="icon-1"  alt="">
-                            </div>
-                        </a>
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/dribble.svg" class="icon-1"  alt="">
-                            </div>
-                        </a>
-                    </div>
-                    
-                </div>
-                <div class="marginer"></div>
-                <div class="left_2"> 
-                    <div class="left_2-1">
-                        <h2>Age: 25</h2>
-                        <p>
-                            <%user.age%>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="marginer"></div>
-                <div class="left_3"></div>
-                <div class="marginer"></div>
-                <div class="left_4"></div>
-                <div class="marginer"></div>
-                <div class="left_5"></div>
-                <div class="marginer"></div>
-
-
-            </div>
-            <div class="midd_frame"></div>
-            <div class="right_frame"></div>
-        </div>
-    </div>
-
-</body>
-
-</html> -->
-
-<!DOCTYPE html>More actions
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -106,7 +15,6 @@
 
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -175,12 +83,10 @@
                 <div class="left_2-2">    
                     <div id="rect" class="age">
                         <div class="rectangle_1"><p>Age:</p></div>
-                        <p>24</p>
                         <%=user.age%>
                     </div>
                     <div id="rect" class="residence">
                         <div class="rectangle_2"><p>Residence:</p></div>
-                        <p>BN</p>
                         <%=user.residence%>
                     </div>
                     <div id="rect" class="freelance">
@@ -189,7 +95,6 @@
                     </div>
                     <div id="rect" class="address">
                         <div class="rectangle_4"><p>Address:</p></div>
-                        <p>Busan, South Korea</p>
                         <%=user.address%>
                     </div>
                 </div>
@@ -201,19 +106,16 @@
                     <div class="left_3-3">
                         <h4>Languages</h4>
                         <div class="lang1">
-                            <p class="english">English</p>
                             <div class="uzbek"><%=user.languages[0]%></div>
                             <p class="percent">100%</p>
                         </div>
                         <div class="line1"><img class="rasm" src="icon/line1.svg" alt=""></div>
                         <div class="lang2">
-                            <p class="russian">Russian</p>
                             <div class="korean"><%=user.languages[1]%></div>
                             <p class="percent">80%</p>
                         </div>
                         <div class="line2"><img src="icon/line2.svg" alt=""></div>
                         <div class="lang3">
-                            <p class="korean">Korean</p>
                             <div class="english"><%=user.languages[2]%></div>
                             <p class="percent">60%</p>
                         </div>
@@ -226,31 +128,26 @@
                     <div class="left_4-4">
                         <h4>Skills</h4>
                         <div class="skill1">
-                            <p class="html">Html</p>
                             <div class="html"><%=user.skills[0]%></div>
                             <p class="percent">90%</p>
                         </div>
                         <div class="line4"><img class="rasm" src="icon/line4.svg" alt=""></div>
                         <div class="skill2">
-                            <p class="css">Css</p>
                             <div class="css"><%=user.skills[1]%></div>
                             <p class="percent">85%</p>
                         </div>
                         <div class="line5"><img src="icon/line5.svg" alt=""></div>
                         <div class="skill3">
-                            <p class="js">JS</p>
                             <div class="nodeJs"><%=user.skills[2]%></div>
                             <p class="percent">80%</p>
                         </div>
                         <div class="line6"><img src="icon/line6.svg" alt=""></div>
                         <div class="skill4">
-                            <p class="php">PHP</p>
                             <div class="python"><%=user.skills[3]%></div>
                             <p class="percent">75%</p>
                         </div>
                         <div class="line7"><img src="icon/line7.svg" alt=""></div>
                         <div class="skill5">
-                            <p class="wordpress">WordPress</p>
                             <div class="wordpress"><%=user.skills[4]%></div>
                             <p class="percent">85%</p>
                         </div>
@@ -278,8 +175,6 @@
                             <img class="quadre" src="icon/quadre.svg" alt="">
                             <%=user.extra_skills[2]%>
                         </div>
-                        <div class="quadre" class="bootstrap">
-                            <img src="icon/quadre.svg" alt="">
                         <div class="quadre">
                             <img class="extraskill4" src="icon/quadre.svg" alt="">
                             <%=user.extra_skills[3]%>
@@ -364,9 +259,8 @@
                     <img src="menu_icon/Contact.svg" alt="">
                 </div>
             </div>
-             
         </div>
-    </div>More actions
+    </div>
 
 </body>
 
