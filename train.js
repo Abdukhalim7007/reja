@@ -85,7 +85,7 @@ function countDigits(str) {
     return soni;
   }
   
-  const javob = countDigits("a7sdfg23a45sdf94jw0h");
+  const javob = countDigits("ad2a54y79wet0sfgb9");
   console.log("javob:", javob);
 
 // A-TASK
