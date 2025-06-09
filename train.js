@@ -74,17 +74,31 @@ console.log("passed here 1");
 
 // run();
 
-// A-TASK
-function countLetter(letter, text) {
-    let count = 0;
-    for (let i = 0; i < text.length; i++) {
-        if (text[i] === letter) {
-            count++;
-        }
+// B-TASK
+function countDigits(str) {
+    let soni = 0;
+    for (let i = 0; i < str.length; i++) {
+      if (!isNaN(str[i]) && str[i] !== ' ') {
+        soni++;
+      }
     }
-    return count;
-}
+    return soni;
+  }
+  
+  const javob = countDigits("a7sdfg23a45sdf94jw0h");
+  console.log("javob:", javob);
 
-console.log(countLetter("e", "engineer"));
+// A-TASK
+// function countLetter(letter, text) {
+//     let count = 0;
+//     for (let i = 0; i < text.length; i++) {
+//         if (text[i] === letter) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// console.log(countLetter("e", "engineer"));
 
  
