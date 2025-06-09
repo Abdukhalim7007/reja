@@ -1,6 +1,6 @@
 console.log("Web Serverni boshlash");
 const express = require("express");
-const res = require("express/lib/response");
+// const res = require("express/lib/response");
 const app = express();
 const http = require("http");
 const fs = require("fs");
@@ -15,7 +15,8 @@ fs.readFile("database/user.json", "utf8", (err, data) =>{
 });
 
 
-// MONGOBD cennect
+// MONGOBD chaqirish
+const db = require("./server").db();
 //1: Kirish codesss
 app.use(express.static("public"));
 app.use(express.json());

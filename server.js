@@ -4,7 +4,7 @@ const mongodb = require("mongodb");
 
 
 let db;
-  const connectionString = "mongodb+srv://Yohan:pRbGxWjIuY3xa9NH@cluster0.dogmyac.mongodb.net/Reja?retryWrites=true&w=majority";
+  const connectionString = "mongodb+srv://Yohan:qn2TyziVBxHNSk6k@cluster0.dogmyac.mongodb.net/Reja?retryWrites=true&w=majority";
 
 
 
@@ -16,7 +16,7 @@ mongodb.connect(connectionString, {
     if(err) console.log("ERROR on connection Mongodb");
     else{
         console.log("Mongodb connection succeed");
-        console.log(client);
+         module.exports = client;
         const app = require("./app");
         const server = http.createServer(app);
         let PORT = 3000;
@@ -28,6 +28,7 @@ mongodb.connect(connectionString, {
  }
 );
 
+ 
  
 
  
