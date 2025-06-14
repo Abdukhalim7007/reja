@@ -74,18 +74,70 @@ console.log("TRAIN AREA!");
 
 // run();
 
-// C-TASK
-let gap1 = "mitgroup27";
-let gap2 = "itm2gourp7";
-function checkContent(gap1, gap2) {
-  let qolipGap1 = gap1.toLowerCase().split('').sort().join('');
-  let qolipGap2 = gap2.toLowerCase().split('').sort().join('');
+// D- TASK
 
-  return qolipGap1 === qolipGap2 ;
+class Shop {
+    constructor(non, lagmon, cola) {
+        this.products = {
+            non: non,
+            lagmon: lagmon,
+            cola: cola
+        };
+    }
 
+    _getTime() {
+        const date = new Date();
+        const hours = String(date.getHours()).padStart(2, '0'); 
+        const minutes = String(date.getMinutes()).padStart(2, '0'); 
+        return `${hours}:${minutes}`;
+    }
+
+    sotish(mahsulot, miqdor) {
+        if (!(mahsulot in this.products)) {
+            console.log(`Mahsulot ${mahsulot} do'konimizda yo'q!`);
+            return;
+        }
+        if (this.products[mahsulot] >= miqdor) {
+            this.products[mahsulot] -= miqdor;
+            console.log(`hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} sotildi!`);
+        } else {
+            console.log(`hozir ${this._getTime()}da ${mahsulot}dan yetarli miqdorda mavjud emas!`);
+        }
+    }
+
+    qoldiq() {
+        console.log(`hozir ${this._getTime()}da ${this.products.non}ta non, ${this.products.lagmon}ta lagmon va ${this.products.cola}ta cola mavjud!`);
+    }
+
+    qabul(mahsulot, miqdor) {
+        if (!(mahsulot in this.products)) {
+            console.log(`Mahsulot ${mahsulot} do'konimizda yo'q!`);
+            return;
+        }
+        this.products[mahsulot] += miqdor;
+        console.log(`Hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} qabul qilindi!`);
+    }
 }
 
-console.log(checkContent(gap1, gap2));
+const shop = new Shop(4, 5, 2);
+shop.qoldiq(); 
+shop.sotish('non' , 3);  
+shop.qabul('cola' , 4); 
+shop.qoldiq();
+
+
+// C-TASK
+// let gap1 = "mitgroup27";
+// let gap2 = "itm2gourp7";
+// function checkContent(gap1, gap2) {
+//   let qolipGap1 = gap1.toLowerCase().split('').sort().join('');
+//   let qolipGap2 = gap2.toLowerCase().split('').sort().join('');
+
+//   return qolipGap1 === qolipGap2 ;
+
+// }
+
+// console.log(checkContent(gap1, gap2));
 
 
 // B-TASK
