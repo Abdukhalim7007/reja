@@ -21,7 +21,7 @@ console.log("TRAIN AREA!");
 //   else {
 //      setInterval(function () {
 //         callback(null, list[5]);
-//      }, 1000);
+//      }, 1000); 
 //   }
 // }
 
@@ -30,7 +30,7 @@ console.log("TRAIN AREA!");
 // maslahatBering(70, (err, data) => {
 //   if (err) console.log("ERROR:", err);
 //   else { console.log("javob:", data);
-//   }
+//    }
 // });
 // console.log("passed here 1");
 
