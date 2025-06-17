@@ -74,56 +74,65 @@ console.log("TRAIN AREA!");
 
 // run();
 
-// D- TASK
-
-class Shop {
-    constructor(non, lagmon, cola) {
-        this.products = {
-            non: non,
-            lagmon: lagmon,
-            cola: cola
-        };
-    }
-
-    _getTime() {
-        const date = new Date();
-        const hours = String(date.getHours()).padStart(2, '0'); 
-        const minutes = String(date.getMinutes()).padStart(2, '0'); 
-        return `${hours}:${minutes}`;
-    }
-
-    sotish(mahsulot, miqdor) {
-        if (!(mahsulot in this.products)) {
-            console.log(`Mahsulot ${mahsulot} do'konimizda yo'q!`);
-            return;
-        }
-        if (this.products[mahsulot] >= miqdor) {
-            this.products[mahsulot] -= miqdor;
-            console.log(`hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} sotildi!`);
-        } else {
-            console.log(`hozir ${this._getTime()}da ${mahsulot}dan yetarli miqdorda mavjud emas!`);
-        }
-    }
-
-    qoldiq() {
-        console.log(`hozir ${this._getTime()}da ${this.products.non}ta non, ${this.products.lagmon}ta lagmon va ${this.products.cola}ta cola mavjud!`);
-    }
-
-    qabul(mahsulot, miqdor) {
-        if (!(mahsulot in this.products)) {
-            console.log(`Mahsulot ${mahsulot} do'konimizda yo'q!`);
-            return;
-        }
-        this.products[mahsulot] += miqdor;
-        console.log(`Hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} qabul qilindi!`);
-    }
+// E - TASK
+let gap = "Mitask";
+function getReverse(gap) {
+    let teskariGap = gap.split('').reverse().join('');
+    return teskariGap;
 }
 
-const shop = new Shop(4, 5, 2);
-shop.qoldiq(); 
-shop.sotish('non' , 3);  
-shop.qabul('cola' , 4); 
-shop.qoldiq();
+console.log(getReverse(gap));
+
+// D- TASK
+
+// class Shop {
+//     constructor(non, lagmon, cola) {
+//         this.products = {
+//             non: non,
+//             lagmon: lagmon,
+//             cola: cola
+//         };
+//     }
+
+//     _getTime() {
+//         const date = new Date();
+//         const hours = String(date.getHours()).padStart(2, '0'); 
+//         const minutes = String(date.getMinutes()).padStart(2, '0'); 
+//         return `${hours}:${minutes}`;
+//     }
+
+//     sotish(mahsulot, miqdor) {
+//         if (!(mahsulot in this.products)) {
+//             console.log(`Mahsulot ${mahsulot} do'konimizda yo'q!`);
+//             return;
+//         }
+//         if (this.products[mahsulot] >= miqdor) {
+//             this.products[mahsulot] -= miqdor;
+//             console.log(`hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} sotildi!`);
+//         } else {
+//             console.log(`hozir ${this._getTime()}da ${mahsulot}dan yetarli miqdorda mavjud emas!`);
+//         }
+//     }
+
+//     qoldiq() {
+//         console.log(`hozir ${this._getTime()}da ${this.products.non}ta non, ${this.products.lagmon}ta lagmon va ${this.products.cola}ta cola mavjud!`);
+//     }
+
+//     qabul(mahsulot, miqdor) {
+//         if (!(mahsulot in this.products)) {
+//             console.log(`Mahsulot ${mahsulot} do'konimizda yo'q!`);
+//             return;
+//         }
+//         this.products[mahsulot] += miqdor;
+//         console.log(`Hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} qabul qilindi!`);
+//     }
+// }
+
+// const shop = new Shop(4, 5, 2);
+// shop.qoldiq(); 
+// shop.sotish('non' , 3);  
+// shop.qabul('cola' , 4); 
+// shop.qoldiq();
 
 
 // C-TASK
