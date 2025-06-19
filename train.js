@@ -89,7 +89,8 @@ let harf = "l"
        
     };
     console.log(findDoublers(soz, harf));
-// E - TASK
+
+    // E - TASK
 // let gap = "Mitask";
 // function getReverse(gap) {
 //     let teskariGap = gap.split('').reverse().join('');
