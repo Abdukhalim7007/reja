@@ -73,15 +73,30 @@ console.log("TRAIN AREA!");
 // }
 
 // run();
+ 
 
+ // F - TASK
+
+let soz = "Hello"; 
+let harf = "l"
+
+    function findDoublers(soz, harf) {
+        if ( soz.indexOf(harf) !== soz.lastIndexOf(harf)) {
+            return true;
+        } else {
+            return false;
+        };
+       
+    };
+    console.log(findDoublers(soz, harf));
 // E - TASK
-let gap = "Mitask";
-function getReverse(gap) {
-    let teskariGap = gap.split('').reverse().join('');
-    return teskariGap;
-}
+// let gap = "Mitask";
+// function getReverse(gap) {
+//     let teskariGap = gap.split('').reverse().join('');
+//     return teskariGap;
+// }
 
-console.log(getReverse(gap));
+// console.log(getReverse(gap));
 
 // D- TASK
 
